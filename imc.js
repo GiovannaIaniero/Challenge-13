@@ -9,3 +9,15 @@ imc = peso / (altura ** 2);*/
 
 let peso = parseFloat(prompt("Ingrese su peso:"));
 let altura = parseFloat(prompt("Ingrese su altura"));
+let imc = peso / (altura ** 2);
+
+document.writeln(`Su IMC es: ${imc}<br>`);
+
+
+if (imc < 18.5) {
+    document.writeln("Tiene un peso bajo");
+} else if (imc >= 18.5 && imc <= 24.99) {
+    document.writeln("Tiene un peso normal");
+} else {
+    document.writeln("Tiene sobrepeso");
+}
